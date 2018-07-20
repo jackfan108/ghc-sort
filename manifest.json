@@ -1,0 +1,12 @@
+{
+  "name": "ghc-sort",
+  "version": "0.1",
+  "description": "github comment sorting",
+  "content_scripts": [
+    {
+      "matches": ["*://*.github.com/*/issues/*"],
+      "js": ["sort.js"]
+    }
+  ],
+  "manifest_version": 2
+}
