@@ -53,7 +53,6 @@ function sortComments() {
 }
 
 window.onkeydown = window.onkeyup = function(e){
-  var e = e || event;
   key[e.keyCode] = e.type == 'keydown';
   if(test_keys('cmd', 'shift', 'O') || test_keys('ctrl', 'shift', 'O')) {
     sortComments();
